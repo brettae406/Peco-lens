@@ -1,5 +1,5 @@
 // Name of the cache
-const CACHE_NAME = "peco-lens-cache-v1";
+const CACHE_NAME = "Peco-lens-cache-v1";
 
 // Files to cache (add more later as your app grows)
 const FILES_TO_CACHE = [
