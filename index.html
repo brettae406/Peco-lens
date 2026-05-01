@@ -13,7 +13,7 @@
     <!-- iPhone PWA Support -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Peco Lens" />
+    <meta name="apple-mobile-web-app-title" content="Peco-lens" />
 
     <!-- iPhone Icon -->
     <link rel="apple-touch-icon" href="/icons/peco-192.png" />
@@ -139,7 +139,7 @@
     <!-- Register Service Worker -->
     <script>
         if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("/Peco-lens/service-worker.js")
+            navigator.serviceWorker.register("Peco-lens/service-worker.js")
                 .then(() => console.log("Service Worker Registered"))
                 .catch(err => console.log("Service Worker Error:", err));
         }
