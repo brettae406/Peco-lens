@@ -3,14 +3,15 @@ const CACHE_NAME = "Peco-lens-cache-v1";
 
 // Files to cache (add more later as your app grows)
 const FILES_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/manifest.json",
-  "/service-worker.js",
-  "/icons/peco-192.png",
-  "/icons/peco-512.png",
-  "/icons/peco-maskable-192.png",
-  "/icons/peco-maskable-512.png"
+ "/Peco-lens/",
+  "/Peco-lens/index.html",
+  "/Peco-lens/style.css",
+  "/Peco-lens/app.js",
+  "/Peco-lens/manifest.json",
+  "/Peco-lens/icons/peco-192.png",
+  "/Peco-lens/icons/peco-512.png",
+  "/Peco-lens/icons/peco-maskable-192.png",
+  "/Peco-lens/icons/peco-maskable-512.png"
 ];
 
 // Install event - caches files
