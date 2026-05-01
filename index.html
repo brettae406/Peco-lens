@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- App Title -->
+    <title>Peco Lens</title>
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- iPhone PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Peco Lens" />
+
+    <!-- iPhone Icons -->
+    <link rel="apple-touch-icon" href="/icons/peco-192.png" />
+
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#0A84FF" />
+    <meta name="background-color" content="#000000" />
+
+    <!-- Basic Styles -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* App container */
+        #app {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Placeholder UI */
+        .loading-message {
+            font-size: 1.4rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- App Root -->
+    <div id="app">
+        <div class="loading-message">
+            Peco Lens is loading…
+        </div>
+    </div>
+
+    <!-- Register Service Worker -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/service-worker.js")
+                .then(() => console.log("Service Worker Registered"))
+                .catch(err => console.log("Service Worker Error:", err));
+        }
+    </script>
+
+</body>
+</html>
