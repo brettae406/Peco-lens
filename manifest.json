@@ -1,6 +1,6 @@
 {
-  "name": "Peco Lens",
-  "short_name": "PecoLens",
+  "name": "Peco-lens",
+  "short_name": "Pecolens",
   "description": "Industrial AR, diagnostics, training, and maintenance suite for technicians.",
   "start_url": "/index.html",
   "scope": "/",
